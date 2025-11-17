@@ -1,5 +1,7 @@
-<script setup lang="ts"></script>
+<script setup></script>
 
-<template></template>
+<template>
+  <h1>Contact Me</h1>
+</template>
 
 <style scoped></style>

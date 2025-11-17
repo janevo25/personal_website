@@ -1,23 +1,14 @@
 <script setup>
 import portfolioData from '@/data/portfolio.json'
+import HeroContainer from '@/components/website/HeroContainer.vue'
+
+const featuredItems = [portfolioData[0], portfolioData[1]]
 </script>
+
 <template>
-  <div class="item" v-for="thing in portfolioData" :key="thing.id">
-    {{ thing.title }}
-  </div>
+  Hello!
+  <hero-container :is-responsive="true" :items="featuredItems"/>
 </template>
 
 <style scoped>
-
-div.all-items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-
-
-  div.item{
-    border: 1px solid black;
-    min-width: 400px;
-  }
-}
 </style>

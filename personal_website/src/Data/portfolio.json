@@ -1,23 +1,23 @@
 [
   {
     "id": 1,
-    "title":"A collage of students",
+    "title": "A collage of college students",
     "yearCreated": 2020,
     "medium": "black and white",
     "type": "photography",
     "description": "I took a photo of my morose students in my Web Dev class",
-    "thumbnail": "path/to/thumb",
-    "HighResImages": ["path/to/highResImages/1","path/to/highResImage/2"],
-    "youTubeUrl": "url to Youtube video"
+    "thumbnail": "item1.jpg",
+    "highResImages": ["path/to/highResImage/1", "path/to/highResImage/2"],
+    "youTubeUrl": "url to YouTube video"
   },
-
   {
     "id": 2,
-    "title": "A toy packaging set",
-    "yearCreated": "2024",
+    "title": "A toy package design",
+    "yearCreated": 2022,
+    "medium": "",
     "type": "packaging",
-    "description": "I created a packaging design for this toy brand",
-    "HighResImages": ["path/to/highResImages/1","path/to/highResImage/2"],
-    "youTubeUrl": "url to Youtube video"
+    "description": "some description",
+    "thumbnail": "item2.jpg",
+    "highResImages": ["path/to/highResImage/1", "path/to/highResImage/2"]
   }
 ]
