@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <h1>About Me</h1>
+  <h1>Different kind of Jellycat</h1>
 </template>
 
 <style scoped></style>

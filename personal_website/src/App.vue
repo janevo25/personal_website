@@ -3,12 +3,12 @@ import NavBar from '@/components/website/NavBar.vue'
 </script>
 
 <template>
-  <section class="content">
+  <section class="container">
     <header>
-      <nav-bar></nav-bar>
+      <nav-bar/>
     </header>
 
-    <section>
+    <section class="content">
       <router-view></router-view>
     </section>
 
@@ -16,31 +16,5 @@ import NavBar from '@/components/website/NavBar.vue'
   </section>
 </template>
 
-<style scoped>
-section.container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 
-    > * {
-      border: 1px solid black;
-    }
-
-    .content {
-      background-color: white;
-      color: black;
-      padding: 10px;
-      border-radius: 10px;
-
-      p {
-        &:first-of-type {
-          margin-top:0;
-          }
-
-          &:last-of-type {
-            margin-top:0;}
-      }
-
-    }
-  }
-</style>
+<style scoped></style>

@@ -1,23 +1,128 @@
-[
-  {
-    "id": 1,
-    "title": "A collage of college students",
-    "yearCreated": 2020,
-    "medium": "black and white",
-    "type": "photography",
-    "description": "I took a photo of my morose students in my Web Dev class",
-    "thumbnail": "item1.jpg",
-    "highResImages": ["path/to/highResImage/1", "path/to/highResImage/2"],
-    "youTubeUrl": "url to YouTube video"
-  },
-  {
-    "id": 2,
-    "title": "A toy package design",
-    "yearCreated": 2022,
-    "medium": "",
-    "type": "packaging",
-    "description": "some description",
-    "thumbnail": "item2.jpg",
-    "highResImages": ["path/to/highResImage/1", "path/to/highResImage/2"]
-  }
-]
+{
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Who are you buying the gift for?(Gender)",
+      "options": [
+        "Female",
+        "Male",
+        "Non-binary",
+        "Prefer not to say"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "How much do you want to spend?",
+      "options": [
+        "$0-$25",
+        "$25-$50",
+        "$50-$100",
+        "$100+"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "How old is the person you’re gifting?",
+      "options": [
+        "0-5",
+        "6-12",
+        "13-17",
+        "18-24",
+        "25-40",
+        "40-60",
+        "60+"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "What is the occasion?",
+      "options": [
+        "Birthday",
+        "Anniversary",
+        "Thanksgiving",
+        "Christmas",
+        "Graduation"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "multiple-select",
+      "question": "Which best describes their personality?",
+      "options": [
+        "Bubbly & Fun",
+        "Calm & Minimal",
+        "Adventurous",
+        "Creative",
+        "Practical"
+
+      ]
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "What are their interests?",
+      "options": [
+        "Technology & Gadgets",
+        "Sports & Fitness",
+        "Arts & Crafts",
+        "Reading & Learning",
+        "Cooking & Food",
+        "Fashion & Beauty"
+      ]
+    }
+  ],
+  "gifts": [
+    {
+      "id": 1,
+      "name": "Wireless Earbuds",
+      "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400",
+      "price": "$49.99",
+      "link": "https://amazon.com",
+      "tags": ["Technology & Gadgets", "18-30", "$25-$50", "Practical"]
+    },
+    {
+      "id": 2,
+      "name": "Yoga Mat Set",
+      "image": "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=400",
+      "price": "$35.99",
+      "link": "https://amazon.com",
+      "tags": ["Male","Sports & Fitness", "18-24", "$25-$50", "Practical","Christmas","Adventurous"]
+    },
+    {
+      "id": 3,
+      "name": "Watercolor Paint Set",
+      "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400",
+      "price": "$29.99",
+      "link": "https://amazon.com",
+      "tags": ["Arts & Crafts", "Under $25", "Creative"]
+    },
+    {
+      "id": 4,
+      "name": "Smart Watch",
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400",
+      "price": "$149.99",
+      "link": "https://amazon.com",
+      "tags": ["Technology & Gadgets", "18-30", "$100-$200", "Practical"]
+    },
+    {
+      "id": 5,
+      "name": "Cookbook Collection",
+      "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+      "price": "$39.99",
+      "link": "https://amazon.com",
+      "tags": ["Cooking & Food", "Reading & Learning", "$25-$50", "Practical"]
+    },
+    {
+      "id": 6,
+      "name": "Leather Journal",
+      "image": "https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=400",
+      "price": "$24.99",
+      "link": "https://amazon.com",
+      "tags": ["Reading & Learning", "Under $25", "Creative", "Sentimental"]
+    }
+  ]
+}

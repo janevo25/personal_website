@@ -1,15 +1,17 @@
-<script setup></script>
+<script setup>
+</script>
 
 <template>
   <div class="container">
     <div class="logo"></div>
+    <img src="/src/assets/gift_logo.png" alt="Gift Giving Club Logo"/>
 
     <div class="links">
       <router-link :to="{name: 'home'}">Home</router-link>
 
-      <router-link :to="{name: 'about-me'}">About Me</router-link>
+      <router-link :to="{name: 'generate'}">Generate</router-link>
 
-      <router-link :to="{name: 'contact-me'}">Contact Me</router-link>
+      <router-link :to="{name: 'explore'}">Explore</router-link>
     </div>
   </div>
 </template>
@@ -23,10 +25,8 @@ div.container {
   align-items: center;
 
   div.logo {
-    height: 200px;
-    width: 200px;
-    background-color: white;
-    border-radius: 100px;
+    height: 20px;
+    width: 30px;
   }
 
   div.links {
@@ -35,14 +35,14 @@ div.container {
     gap: 10px;
 
     a {
-      color: white;
+      color: black;
       text-decoration: none;
       border: 1px solid white;
       padding: 5px;
 
       &:hover {
         background-color: white;
-        color: black;
+        color: saddlebrown;
       }
     }
 
@@ -52,5 +52,4 @@ div.container {
     }
   }
 }
-
 </style>
