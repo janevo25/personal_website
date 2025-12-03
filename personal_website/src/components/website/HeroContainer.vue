@@ -1,5 +1,6 @@
 <script setup>
-import PortfolioHero from './WebsiteHero.vue'
+import WebsiteHero from './WebsiteHero.vue'
+
 
 const props = defineProps({
   items: {
@@ -14,8 +15,11 @@ const props = defineProps({
 </script>
 
 <template>
+  <div class="section-title">
+  <h2 class="category-text">TOP TRENDING GIFTS NOW</h2>
+  </div>
   <div v-if="items.length > 0" class="all-items" :class="{ 'non-responsive': !isResponsive }">
-    <portfolio-hero
+    <website-hero
       v-for="item in props.items"
       :key="item.id"
       :thumbnail="item.thumbnail"
@@ -27,4 +31,36 @@ const props = defineProps({
 </template>
 
 <style scoped>
+.all-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* desktop */
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-title{
+  font-family: "Helvetica Neue",sans-serif;
+  font-weight: 400;
+}
+/* Tablets */
+@media (max-width: 992px) {
+  .all-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+  .all-items {
+    grid-template-columns: 1fr; /* one column */
+    gap: 1.5rem;
+  }
+}
+
+
+div.non-responsive {
+  overflow: scroll;
+  flex-wrap: nowrap;
+}
 </style>

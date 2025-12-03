@@ -3,9 +3,9 @@
 
 <template>
   <div class="container">
-    <div class="logo"></div>
+    <div class="logo">
     <img src="/src/assets/gift_logo.png" alt="Gift Giving Club Logo"/>
-
+    </div>
     <div class="links">
       <router-link :to="{name: 'home'}">Home</router-link>
 
@@ -25,8 +25,9 @@ div.container {
   align-items: center;
 
   div.logo {
-    height: 20px;
-    width: 30px;
+    display: flex;
+    height: 80px;
+    width: 50px;
   }
 
   div.links {
