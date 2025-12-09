@@ -1,11 +1,13 @@
 <script setup>
-import HeroContainer from '@/components/website/HeroContainer.vue'
-import ItemData from '@/Data/ItemData.json'
+import HeroImage from '@/components/website/HeroImage.vue'
 </script>
 
 <template>
-  <hero-container :is-responsive="true" :items="ItemData" />
+  <header>
+    <HeroImage/>
+  </header>
 </template>
 
 <style scoped>
+
 </style>

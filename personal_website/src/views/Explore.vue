@@ -1,7 +1,19 @@
-<script setup></script>
+<script setup>
+import HeroContainer from '@/components/website/HeroContainer.vue'
+import ItemData from '@/Data/ItemData.json'
+import HeroImage from '@/components/website/HeroImage.vue'
+</script>
 
 <template>
-  <h1>Different kind of Jellycat</h1>
+  <header>
+    <HeroImage/>
+  </header>
+  <hero-container :is-responsive="true" :items="ItemData" />
 </template>
 
-<style scoped></style>
+<style scoped>
+* {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+}
+</style>

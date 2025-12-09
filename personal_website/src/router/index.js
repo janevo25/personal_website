@@ -22,7 +22,6 @@ const router = createRouter({
       component: Explore,
     }
   ]
-
 })
 
 export default router

@@ -12,13 +12,23 @@ const props = defineProps({
     type: [String,Number],
     required: true,
   },
+  hoverThumbnail: {
+    type: String,
+    required: true,
+  }
 })
 </script>
 
 <template>
   <div class="item-card">
     <!-- IMAGE -->
-    <div class="hero" :style="`background-image: url(/src/assets/${props.thumbnail})`"></div>
+    <div
+      class="hero"
+      :style="`
+    --img: url(/src/assets/${props.thumbnail});
+    --img-hover: url(/src/assets/${props.hoverThumbnail});
+  `"
+    ></div>
 
     <!-- TEXT BELOW IMAGE -->
     <div class="item-info">
@@ -36,8 +46,13 @@ const props = defineProps({
   background-size: cover;
   background-position: center;
   display: flex;
+  background-image: var(--img);
   flex-direction: column;
   justify-content: flex-end;
+  transition: background-image 0.3s ease;
+}
+.hero:hover {
+  background-image: var(--img-hover);
 }
 
 /* TEXT BELOW IMAGE */
@@ -46,12 +61,12 @@ const props = defineProps({
   justify-content: space-between;
   margin-top: 0.8rem;
   padding: 0 4px;
-  font-family: Helvetica, sans-serif;
 }
 .item-name {
   font-size: 1rem;
-  font-weight: 600;
   color: black;
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
 }
 
 .item-price {

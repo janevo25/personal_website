@@ -2,48 +2,51 @@
 </script>
 
 <template>
-    <div class="page-container">
+  <div class="page-container">
 
-      <section class="hero">
-        <img src="https://glacier.org/wp-content/uploads/2020/10/Glacier-Desktop-Wallpaper-by-Cole-Buckovich-6-scaled.jpg" class="hero-img" alt="hero" />
-        <div class="hero-text">
-          <h1>Discover the Perfect Gift</h1>
-          <p>Find gifts that bring joy</p>
-        </div>
-      </section>
+    <section class="hero-image2">
+      <div class="hero-text2">
+        <h1>DISCOVER THE PERFECT GIFTS</h1>
+        <p>We're here to make gift shopping easier</p>
+      </div>
+    </section>
 
-    </div>
-  </template>
+  </div>
+</template>
 
 <style scoped>
-.hero{
-  width: 100%;
-  height: 100%;
+.page-container {
+  margin-top: 0;
+  padding-top: 0;
 }
-/* TEXT ON TOP */
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  padding: 0 1rem;
-}
-
-.hero-text h1 {
-  font-size: 3rem;
+.hero-image2 {
+  background-image: url("https://glacier.org/wp-content/uploads/2020/10/Glacier-Desktop-Wallpaper-by-Cole-Buckovich-6-scaled.jpg");
+  background-size: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-position: center; /* keeps subject centered */
+  background-repeat: no-repeat;
   margin: 0;
+  gap: 0;
+
+  .hero-text2 {
+    text-align: center;
+    color: white;
+    font-size: 1.7rem;
+    font-family:'Helvetica Neue',sans-serif;
+    font-weight: 400;
+  }
+  .hero-text2 p{
+    font-size: 1.5rem;
+  }
 }
 
-.hero-text p {
-  margin-top: 10px;
-  font-size: 1.3rem;
-}
 
 /* Tablet */
 @media (max-width: 768px) {
-  .hero {
+  .hero-image2 {
     height: 35vh;
   }
   .hero-text h1 {
@@ -56,7 +59,7 @@
 
 /* Phone */
 @media (max-width: 480px) {
-  .hero {
+  .hero-image {
     height: 30vh;
   }
   .hero-text h1 {

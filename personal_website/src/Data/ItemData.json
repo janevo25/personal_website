@@ -7,6 +7,7 @@
     "type": "photography",
     "description": "I took a photo of my morose students in my Web Dev class",
     "thumbnail": "item2.jpg",
+    "hoverThumbnail": "lamp.jpg",
     "highResImages": ["path/to/highResImage/1", "path/to/highResImage/2"],
     "youTubeUrl": "url to YouTube video",
     "price": "$25"
@@ -19,8 +20,9 @@
     "type": "packaging",
     "description": "some description",
     "thumbnail": "item2.jpg",
+    "hoverThumbnail": "lamp.jpg",
     "highResImages": ["path/to/highResImage/1", "path/to/highResImage/2"],
-    "price": "25"
+    "price": "$25"
   },
   {
     "id": 3,
@@ -31,7 +33,7 @@
     "description": "A lovely day on a Hawaiian beach",
     "thumbnail": "item2.jpg",
     "highResImages": ["path/to/highResImage/1", "path/to/highResImage/2"],
-    "price": "25"
+    "price": "$25"
   },
   {
     "id": 4,
@@ -43,7 +45,7 @@
     "thumbnail": "item2.jpg",
     "highResImages": ["path/to/highResImage/1", "path/to/highResImage/2"],
     "youTubeUrl": "url to YouTube video",
-    "price": "25"
+    "price": "$25"
   },
   {
     "id": 5,
