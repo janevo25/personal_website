@@ -35,8 +35,10 @@ const filteredItems = computed(() => {
       :hover-thumbnail="item.hoverThumbnail"
       :title="item.title"
       :price="item.price"
+      :link="item.link"
     />
   </div>
+
   <div class="see-all-button">
     <router-link :to="{ name: 'explore' }" class="see-all-btn">
       SEE ALL
@@ -71,7 +73,7 @@ const filteredItems = computed(() => {
   cursor: pointer;
   transition: all 0.3s ease;
   margin: 0 20px;
-
+  align-items: center;
 }
 
 
@@ -135,6 +137,9 @@ const filteredItems = computed(() => {
   .filter-buttons button {
     font-size: 0.95rem;
     padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
   }
 }
 
@@ -143,6 +148,9 @@ const filteredItems = computed(() => {
   .filter-menu {
     padding-top: 2rem;
     margin-bottom: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
   }
 
   .filter-buttons {

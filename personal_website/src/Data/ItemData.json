@@ -1,105 +1,85 @@
 [
   {
     "id": 1,
-    "title": "A collage of college students",
-    "yearCreated": 2020,
-    "medium": "black and white",
-    "type": "photography",
-    "description": "I took a photo of my morose students in my Web Dev class",
-    "thumbnail": "item2.jpg",
-    "hoverThumbnail": "lamp.jpg",
+    "title": "BASHFUL BEIGE BUNNY",
+    "gender": "female",
+    "thumbnail": "jelltcat_front.png",
+    "hoverThumbnail": "jelltcat_back.png",
     "highResImages": ["path/to/highResImage/1", "path/to/highResImage/2"],
-    "youTubeUrl": "url to YouTube video",
+    "link": "https://us.jellycat.com/bashful-beige-bunny/?_gl=1*1k8h8kq*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiArt_JBhCTARIsADQZaynEDiEdNs5yhFqc_QEUfIFSKw8sFEwSdni727rGA0RXf3E3u8Y7mCwaAs6zEALw_wcB&gbraid=0AAAAADtxRQB2pRtquPpv1x98yZ-x3SnM4",
     "price": "$25"
   },
   {
     "id": 2,
-    "title": "A toy package design",
-    "yearCreated": 2022,
-    "medium": "",
-    "type": "packaging",
-    "description": "some description",
-    "thumbnail": "item2.jpg",
-    "hoverThumbnail": "lamp.jpg",
+    "title": "OWALA FREESIP 24OZ WATER BOTTLE",
+    "thumbnail": "owala_front.webp",
+    "hoverThumbnail": "owala_back.webp",
     "highResImages": ["path/to/highResImage/1", "path/to/highResImage/2"],
-    "price": "$25"
+    "price": "$30"
   },
   {
     "id": 3,
-    "title": "A day at the beach",
-    "yearCreated": 2025,
-    "medium": "photography",
-    "type": "outdoor",
-    "description": "A lovely day on a Hawaiian beach",
-    "thumbnail": "item2.jpg",
+    "title": "KODHI MINI TABLE LAMP",
+    "thumbnail": "lamp.webp",
+    "hoverThumbnail": "lamp_dark.webp",
     "highResImages": ["path/to/highResImage/1", "path/to/highResImage/2"],
-    "price": "$25"
+    "price": "$39",
+    "link": "https://www.urbanoutfitters.com/shop/kodhi-mini-table-lamp?color=089"
   },
   {
     "id": 4,
-    "title": "A collage of college students",
-    "yearCreated": 2020,
-    "medium": "black and white",
-    "type": "photography",
-    "description": "I took a photo of my morose students in my Web Dev class",
-    "thumbnail": "item2.jpg",
+    "title": "AMERICAN NEEDLE BROOKLYN EAGLES HAT",
+    "thumbnail": "boy_cap.webp",
+    "hoverThumbnail": "boy_cap_back.webp",
     "highResImages": ["path/to/highResImage/1", "path/to/highResImage/2"],
-    "youTubeUrl": "url to YouTube video",
-    "price": "$25"
+    "price": "$40",
+    "gender": "male"
   },
   {
     "id": 5,
-    "title": "A toy package design",
-    "yearCreated": 2022,
-    "medium": "",
-    "type": "packaging",
-    "description": "some description",
-    "thumbnail": "item2.jpg",
+    "title": "MY ARCADE® PAC-MAN MICRO PLAYER",
+    "thumbnail": "pacman.webp",
+    "hoverThumbnail": "pacman_close.webp",
     "highResImages": ["path/to/highResImage/1", "path/to/highResImage/2"],
-    "price": "$25"
+    "price": "$35",
+    "link": "https://www.urbanoutfitters.com/shop/my-arcade-pac-man-micro-player-pro-arcade-game2?color=072&searchparams=q%3Dgame",
+    "gender": "male"
     },
   {
     "id": 6,
-    "title": "A day at the beach",
-    "yearCreated": 2025,
-    "medium": "photography",
-    "type": "outdoor",
-    "description": "A lovely day on a Hawaiian beach",
-    "thumbnail": "item2.jpg",
+    "title": "EMBROIDERED THROW PILLOW",
+    "thumbnail": "pillow.webp",
+    "hoverThumbnail": "pillow_close.webp",
     "highResImages": ["path/to/highResImage/1", "path/to/highResImage/2"],
-    "price": "$25"
+    "link": "https://www.urbanoutfitters.com/shop/cheeky-slogan-velvet-embroidered-throw-pillow?color=054",
+    "price": "$39"
   },
   {
     "id": 7,
-    "title": "A day at the beach",
-    "yearCreated": 2025,
-    "medium": "photography",
-    "type": "outdoor",
-    "description": "A lovely day on a Hawaiian beach",
-    "thumbnail": "item2.jpg",
+    "title": "MONCHHICHI FRUIT BEANIE PLUSHIE",
+    "thumbnail": "toy_keychain.webp",
+    "hoverThumbnail": "toy_keychain_close.webp",
     "highResImages": ["path/to/highResImage/1", "path/to/highResImage/2"],
-    "price": "$25"
+    "price": "$24",
+    "link": "https://www.urbanoutfitters.com/shop/monchhichi-fruit-beanie-plushie?color=034&recommendation=pdp-primary-sfrectray-webconsentsimilarity1",
+    "gender": "female"
   },
   {
     "id": 8,
-    "title": "A day at the beach",
-    "yearCreated": 2025,
-    "medium": "photography",
-    "type": "outdoor",
-    "description": "A lovely day on a Hawaiian beach",
-    "thumbnail": "item2.jpg",
+    "title": "BOULANGERIE PERFUME MIST",
+    "thumbnail": "perfume.webp",
+    "hoverThumbnail": "perfume_close.webp",
     "highResImages": ["path/to/highResImage/1", "path/to/highResImage/2"],
-    "price": "$25"
+    "link": "https://www.urbanoutfitters.com/shop/boulangerie-perfume-mist2?color=060",
+    "price": "$28"
   },
   {
     "id": 9,
-    "title": "A day at the beach",
-    "price": "$25",
-    "yearCreated": 2025,
-    "medium": "photography",
-    "type": "outdoor",
-    "description": "A lovely day on a Hawaiian beach",
-    "thumbnail": "item2.jpg",
-    "highResImages": ["path/to/highResImage/1", "path/to/highResImage/2"]
+    "title": "MAKEUP BAG",
+    "thumbnail": "makeupbag.webp",
+    "hoverThumbnail": "makeupbag_close.webp",
+    "highResImages": ["path/to/highResImage/1", "path/to/highResImage/2"],
+    "link": "https://www.urbanoutfitters.com/shop/uo-makeup-bag?color=237",
+    "price": "$20"
   }
 ]

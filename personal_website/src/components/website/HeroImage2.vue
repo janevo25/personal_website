@@ -3,10 +3,10 @@
 
 <template>
   <div class="page-container">
-    <section class="hero-image">
-      <div class="hero-text">
-        <h1> <span class="highlight">DISCOVER THE PERFECT GIFTS</span></h1>
-        <p>We're here to make gift shopping easier</p>
+    <section class="hero-image2">
+      <div class="hero-text2">
+        <h1> <span class="highlight">EXPLORE SOME MORE GIFT OPTIONS </span></h1>
+        <p>Shop our full selection here.</p>
       </div>
     </section>
   </div>
@@ -17,36 +17,33 @@
   margin-top: 0;
   padding-top: 0;
 }
-.hero-image {
-  background-image: url('src/assets/hero_img (1).gif');
-  background-size: cover;
-  display: flex;
+.hero-image2 {
+  background-image:
+    url('src/assets/polkadot_bg.webp');  display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
-  background-position: center; /* keeps subject centered */
-  background-repeat: no-repeat;
+  height: 30vh;
   margin: 0;
   gap: 0;
 
-  .hero-text {
+  .hero-text2 {
     text-align: center;
     color: white;
     font-family: 'Helvetica Neue', sans-serif;
   }
   .highlight {
-    background: #f3ff4d;
+    background: #612928;
     padding: 0 0.2em;
     box-decoration-break: clone;
   }
-  .hero-text h1 {
+  .hero-text2 h1 {
     font-size: 2.5rem;
     font-weight: 400;
     margin: 0 0 0.5rem 0;
-    color: black;
+    color: white;
   }
 
-  .hero-text p {
+  .hero-text2 p {
     font-size: 1.2rem;
     margin-top: 0; /* Remove space above p */
     color: black;
@@ -54,26 +51,26 @@
 }
 /* Tablet */
 @media (max-width: 768px) {
-  .hero-image {
-    height: 45vh;
+  .hero-image2 {
+    height: 40vh;
   }
-  .hero-text h1 {
+  .hero-text2 h1 {
     font-size: 1.5rem;
   }
-  .hero-text p {
+  .hero-text2 p {
     font-size: 1rem;
   }
 }
 
 /* Phone */
 @media (max-width: 480px) {
-  .hero-image {
-    height: 45vh;
+  .hero-image2 {
+    height: 35vh;
   }
-  .hero-text h1 {
+  .hero-text2 h1 {
     font-size: 1.5rem;
   }
-  .hero-text p {
+  .hero-text2 p {
     font-size: 1rem;
   }
 }

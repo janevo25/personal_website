@@ -2,24 +2,23 @@
 import { ref } from 'vue'
 
 const props = defineProps({
-  data: Object,
+  data: Object
 })
 
-// dropdown open/close
-const open = ref(false)
-
-// track selected option
+const emit = defineEmits(['answer-selected'])
 const selected = ref(null)
+const open = ref(false) // added for dropdown toggle
 
 function selectOption(option) {
   selected.value = option
-  open.value = false // close after choosing
+  emit('answer-selected', { questionId: props.data.id, answer: option })
 }
 </script>
 
 <template>
   <div class="question-container">
     <h1 class="question-title">{{ props.data.question }}</h1>
+
     <!-- RADIO -->
     <div v-if="props.data.type === 'radio'" class="options">
       <div class="option" v-for="(element, index) in props.data.options" :key="index">
@@ -38,13 +37,11 @@ function selectOption(option) {
 
     <!-- DROPDOWN -->
     <div v-if="props.data.type === 'dropdown'" class="dropdown">
-      <!-- the clickable dropdown header -->
       <div class="dropdown-header" @click="open = !open">
         {{ selected ? selected : 'Select an answer...' }}
         <span class="arrow" :class="{ open: open }">▾</span>
       </div>
 
-      <!-- dropdown list -->
       <div v-if="open" class="dropdown-list">
         <div
           v-for="(option, index) in props.data.options"
@@ -63,8 +60,9 @@ function selectOption(option) {
 * {
   font-family: 'Helvetica Neue', sans-serif;
   font-weight: normal;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
+
 .question-container {
   max-width: 700px;
   margin: 2rem auto;
@@ -136,4 +134,60 @@ function selectOption(option) {
   transform: rotate(180deg);
 }
 
+/* ====== RESPONSIVE BREAKPOINTS ====== */
+
+/* Tablet: max-width 992px */
+@media (max-width: 992px) {
+  .question-container {
+    padding: 0 1.5rem;
+  }
+
+  .dropdown {
+    max-width: 220px;
+  }
+
+  .dropdown-header {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  .dropdown-option {
+    padding: 8px;
+    font-size: 0.95rem;
+  }
+
+  .option {
+    gap: 8px;
+  }
+}
+
+/* Phone: max-width 600px */
+@media (max-width: 600px) {
+  .question-container {
+    padding: 0 1rem;
+  }
+
+  .options {
+    gap: 0.6rem;
+  }
+
+  .dropdown {
+    max-width: 100%;
+  }
+
+  .dropdown-header {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .dropdown-option {
+    padding: 6px;
+    font-size: 0.9rem;
+  }
+
+  .option {
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+}
 </style>

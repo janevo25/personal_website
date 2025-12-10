@@ -15,19 +15,23 @@ const props = defineProps({
   hoverThumbnail: {
     type: String,
     required: true,
+  },
+  link:{
+    type: String,
+    required: true,
   }
 })
 </script>
 
 <template>
-  <div class="item-card">
+  <a :href="props.link" target="_blank" rel="noopener" class="item-card">
     <!-- IMAGE -->
     <div
       class="hero"
       :style="`
-    --img: url(/src/assets/${props.thumbnail});
-    --img-hover: url(/src/assets/${props.hoverThumbnail});
-  `"
+        --img: url(/src/assets/${props.thumbnail});
+        --img-hover: url(/src/assets/${props.hoverThumbnail});
+      `"
     ></div>
 
     <!-- TEXT BELOW IMAGE -->
@@ -35,13 +39,15 @@ const props = defineProps({
       <div class="item-name">{{ props.title }}</div>
       <div class="item-price">{{ props.price }}</div>
     </div>
-  </div>
+  </a>
 </template>
+
 
 <style scoped>
 .hero {
-  height: 450px;
+  height: 420px;
   min-width: 200px;
+  max-width: 100%;
   flex-grow: 1;
   background-size: cover;
   background-position: center;
@@ -61,6 +67,7 @@ const props = defineProps({
   justify-content: space-between;
   margin-top: 0.8rem;
   padding: 0 4px;
+  text-decoration: none;
 }
 .item-name {
   font-size: 1rem;
@@ -73,5 +80,21 @@ const props = defineProps({
   font-size: 1rem;
   font-weight: 400;
   color: black;
+}
+.item-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.item-card:hover {
+  text-decoration: none;
+}
+
+.item-card:visited {
+  color: inherit;
+}
+
+.item-card:active {
+  text-decoration: none;
 }
 </style>
